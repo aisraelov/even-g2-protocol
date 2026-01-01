@@ -77,4 +77,4 @@ Pull requests welcome! Areas needing research:
 This is an unofficial community project for educational purposes. Not affiliated with Even Realities.
 
 ## Discord
-For all communications, I prefer Discord. Join the [EvenRealities Discord Server](https://discord.gg/arDkX3pr), which contains a reverse engineering channel containing many threads, including G2 RE.
+For all communications, I recommend Discord. Join the [EvenRealities Discord Server](https://discord.gg/arDkX3pr), which contains a reverse engineering channel containing many threads, including G2 RE.
