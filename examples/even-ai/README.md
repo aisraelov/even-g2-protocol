@@ -2,7 +2,7 @@
 
 Display custom questions and answers on the G2 glasses Even AI card.
 
-**Status**: ✅ Working - Protocol fully cracked!
+**Status**: ✅ Working - Protocol cracked
 
 ---
 
@@ -13,10 +13,10 @@ Display custom questions and answers on the G2 glasses Even AI card.
 pip install bleak
 
 # Display custom Q&A
-python even_ai.py "What is 2+2?" "The answer is 4!"
+python even_ai.py "What is 2+2?" "The answer is 4"
 
 # Or with named arguments
-python even_ai.py -q "Hello" -a "Hi there!"
+python even_ai.py -q "Hello" -a "Hi there"
 ```
 
 You should see:
@@ -24,7 +24,7 @@ You should see:
 2. Your question types out
 3. Your answer displays below
 
----
+
 
 ## How It Works
 
@@ -106,9 +106,9 @@ aa210a2001010720080510663a18080010001800221054686520616e737765722069732034218432
 
 ---
 
-## Future: Claude API Integration
+## Future: AI API Integration
 
-With the display protocol working, the next step is to integrate with Claude:
+With the display protocol working, the next step is to integrate with another LLM AI:
 
 ```
 ┌─────────────────┐
@@ -131,35 +131,6 @@ With the display protocol working, the next step is to integrate with Claude:
 └─────────────────┘
 ```
 
-### Requirements for Full Integration
-
-```bash
-pip install anthropic         # Claude API
-pip install bleak            # BLE (already done!)
-pip install whisper          # Speech recognition
-pip install pyaudio          # Audio capture
-```
-
-### API Key
-
-```bash
-export ANTHROPIC_API_KEY="your-key-here"
-```
-
----
-
-## Comparison to Even AI
-
-| Feature | Even AI | Our Implementation |
-|---------|---------|-------------------|
-| AI Model | Even's servers | Your choice (Claude, GPT, etc.) |
-| Network | Required | Required for AI, optional for display |
-| Privacy | Data to Even | You control where data goes |
-| Cost | Free | API costs (~$0.01/query for Claude) |
-| Customization | None | Full control |
-| Offline | No | Display works offline, AI needs network |
-
----
 
 ## Known Limitations
 
@@ -167,18 +138,14 @@ export ANTHROPIC_API_KEY="your-key-here"
 2. **Display time**: No control over how long card stays visible
 3. **Multi-turn**: Context not maintained between queries (yet)
 
----
 
 ## Credits
 
-- **Protocol Discovery**: Tyler (soxi) - January 2, 2026
-- **Protobuf Definitions**: aegray (community)
-- **Testing**: Systematic approach testing revealed CTRL(ENTER) requirement
-
----
+- **Protocol Discovery**: Soxi - January 2, 2026
+- **Protobuf Definitions**: Aegray (that parser is sweet!)
+- The whole ER community fr
 
 ## See Also
 
 - [Even AI Protocol](../../docs/even-ai.md) - Full protocol documentation
-- [Conversate Protocol](../../docs/conversate.md) - Speech transcription
 - [Service IDs](../../docs/services.md) - All service references
