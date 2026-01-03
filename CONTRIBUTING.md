@@ -61,7 +61,5 @@ Open an issue if you:
 | Feature | Status | What's Missing |
 |---------|--------|----------------|
 | Navigation | Unknown | Full protocol not captured |
-| Even AI | Partial | Request format unclear |
+| Even AI | Cracked! | Request format unclear |
 | Translation | Unknown | Language encoding |
-| Display Rendering (0x6402) | Partial | Marker byte meanings |
-| Scroll bar sizing | Partial | Exact calculation |
